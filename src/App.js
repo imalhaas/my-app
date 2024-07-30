@@ -18,10 +18,10 @@ async function initApi(){
   });
 
 
-  return (
-    <div>
-      
-    </div>
-  );
-}
-
+  return ({
+    nomes.map(function(data)){
+      return ({
+        data.nomes
+      })
+    }
+  });

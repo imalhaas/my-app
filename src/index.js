@@ -6,7 +6,7 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App texto={{chamada : 'A danki é otima'}} />
+    <App/>
     
   </React.StrictMode>
 );

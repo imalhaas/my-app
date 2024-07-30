@@ -1,38 +1,22 @@
 
-import './Header.css';
-import Header from './Header';
 import React, { useState, useEffect } from 'react';
 
 
-function App() {
-
+export default function App() {
   const [count, setCount] = useState(0);
-  const [nome, setNome] = useState("Lucas")
-  const [numeros, setNumeros] = useState([1, 2, 3, 4, 5, 6])
 
-  useEffect(())
+  useEffect(() => {
+  document.title = `Você clicou ${count} vezes`;
+   },[count]);
 
 
   return (
     <div>
-     {
-      numeros.map(function(val){
-        return(
-          <p>{val}</p>
-        )
-      })
-    }
-    
-    
-      <button onClick={() => setNome("Magalhaes")}>
-
-        Click me
-
+      <p>Você clicou {count} vezes</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click aqui
       </button>
-
     </div>
-
   );
 }
 
-export default App;
